@@ -4,12 +4,13 @@ require('./lib/init.php');
 
 
 if(empty(uacc())){
-    echo '<script>alert("未登录");location.href = "huihua.php";</script>';
+    echo '<script>alert("未登录");location.href = "gpt4.php";</script>';
     exit();
 }
 
+
 if($_GET['xxcx'] == '1'){
-    $sql = 'select * from chat_huitutaocan';
+    $sql = 'select * from chat_gpt4taocan';
     $sytc = $mysql->getAll($sql);
     print_r(json_encode($sytc));
     exit();
@@ -153,7 +154,7 @@ body {
 
 
 <div class="page-title">
-  <h4><a style="color: white;    font-size: 20px;" href="/" class="el-tooltip el-icon-s-home item" aria-describedby="el-tooltip-9813" tabindex="0"></a> <span style="    font-size: 15px;"><a style="color:white;" href="huihua.php">返回绘画</a></span></h4>
+  <h4><a style="color: white;    font-size: 20px;" href="/" class="el-tooltip el-icon-s-home item" aria-describedby="el-tooltip-9813" tabindex="0"></a> <span style="    font-size: 15px;"><a style="color:white;" href="gpt4.php">返回首页</a></span></h4>
   <div class="user-info">
     <div class="dropdown">
       <a  style="color:white;" class="dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -164,7 +165,7 @@ body {
       <div style="min-width: 8rem;" class="dropdown-menu dha" aria-labelledby="userDropdown">
         <a class="dropdown-item" href="/xiugaimima.php">修改密码</a>
         <a class="dropdown-item" href="/yaoqing.php">邀请好友(可提现)</a>
-        <a class="dropdown-item" href="/huihua.php?tcdl=1">退出登录</a>
+        <a class="dropdown-item" href="/index.php?tcdl=1">退出登录</a>
       </div>
     </div>
   </div>
@@ -213,7 +214,7 @@ body {
 
 <div class="mb-3">
 								<label for="name" class="form-label">充值账号</label>
-								<input disabled type="text" class="form-control" id="namezh" required value="<?php echo $_COOKIE['dengluname'];?> ">
+								<input disabled  type="text" class="form-control" id="namezh" required value="<?php echo $_COOKIE['dengluname'];?>">
 							</div>
 
 <div class="mb-3">
@@ -255,28 +256,47 @@ $kaml = $mysql->getOne($sql);
 
 </div>
 
+
 		<br>	 
 
-		    
+				    
+			    
+				    
+				    	    
 				<div class="card">
 				    
 				    
 				    
 					<div style="     background: linear-gradient(to right, #03A9F4, #00BCD4);" class="card-header bg-primary text-white">
-						<h4 class="card-title">Midjourney Ai绘画点数 套餐购买</h4>
+						<h4 class="card-title">Chatgpt4.0 Plus提问次数 套餐购买</h4>
 					</div>
 					<div class="card-body">
 						<form>
 						    
 							<br>
 							
-						<p><b>下单后会自动给你账号充值，然后你就可以到网站使用Ai绘画!</b></p>
+									
+						
+						
+						        <?php
+          
+          $sql = "select sfkqaihh from chat_admin where id = 1";
+$sfkqaihh = $mysql->getOne($sql);
+         if($sfkqaihh == '开启'){
+             echo '<p><b>下单后会自动给你账号充值，然后你就可以到网站提问了!</b></p>';
+         }else{
+             echo '<p><b>下单后会自动给你账号充值，然后你就可以到网站提问了!</b></p>';
+         }
+          
+          ?>
+   
+						
+					
+						
+						<p>最新ChatGPT4.0 Plus多模态自然语言模型 超级超级聪明！</p>
 				
-						<p>对接的超强Ai绘画模型-Midjourney<a target="_blank" href="./assets/aihys.jpg">👉Ai绘画演示点我</a></p>
 				
-				
-				
-				    <?php
+			    <?php
 				    
 
 	$yhm = $_COOKIE['dengluname'];
@@ -286,21 +306,15 @@ $kaml = $mysql->getOne($sql);
 	    
 
 
-        $sql = "select huihuacs from chat_yonghu where yhmc='$yhm'";
-        $huihuacs = $mysql->getOne($sql);
+        $sql = "select gpt4cs from chat_yonghu where yhmc='$yhm'";
+        $gpt4cs = $mysql->getOne($sql);
         
-        if($huihuacs != '0'){
-            echo '<p>你的剩余绘画次数:<b>'.$huihuacs.'</b></p>';
+        if($gpt4cs != '0'){
+            echo '<p>你的剩余GPT4次数:<b>'.$gpt4cs.'</b></p>';
         }else{
             echo '<p><b style="color:red;">当前你的套餐已到期或未购买 请先购买！</b></p>';
         }
-    
-			
 
-	
-	
-	
-	
 	//判断是否有余额
 	$sql = "select ketixian from chat_yonghu where yhmc='$yhm'";
 	$ketx = $mysql->getOne($sql);
@@ -311,20 +325,29 @@ $kaml = $mysql->getOne($sql);
 	}
 	
 	
-	
+
 	    
 	}
 
-   
-
-		    
-				    ?>
-				
+   ?>
 						
 						
-									
+						
+					
+						
+						<div class="mb-3" style="display:none;">
+								<label for="name" class="form-label">充值账号</label>
+								<input disabled type="text" class="form-control" id="name" required value="<?php echo $_COOKIE['dengluname'];?>">
+							</div>
+						
+						
+						
+								
 							
-				      <?php
+					
+		
+										
+						        <?php
           
 $sql = "select sfkqaihh from chat_admin where id = 1";
 $sfkqaihh = $mysql->getOne($sql);
@@ -333,7 +356,7 @@ $sfkqaihh = $mysql->getOne($sql);
 $sql = "select sfkqgpt4 from chat_admin where id = 1";
 $sfkqgpt4 = $mysql->getOne($sql);
 
-         if($sfkqgpt4 == '开启'){
+         if($sfkqaihh == '开启'){
              
              
              
@@ -353,7 +376,7 @@ $sfkqgpt4 = $mysql->getOne($sql);
 						
 						
 								<div class="form-check">		      
-								<input  required="" class="form-check-input chatgpt4" type="radio" >
+								<input  required="" class="form-check-input chatgpttz" type="radio" checked>
 								
 								<label class="form-check-label" for="">
 										ChatGPT4.0 Plus提问次数
@@ -362,7 +385,7 @@ $sfkqgpt4 = $mysql->getOne($sql);
 									
 				
 							<div class="form-check">		
-								<input  class="form-check-input aihty" type="radio" checked>
+								<input  class="form-check-input aihty" type="radio">
 								
 								<label  class="form-check-label" for="">
 										Ai绘图次数-Midjourney模型
@@ -386,17 +409,18 @@ $sfkqgpt4 = $mysql->getOne($sql);
 								<input  required="" class="form-check-input chatgpt3" type="radio">
 								
 								<label class="form-check-label" for="">
-										ChatGPT Plus提问次数
+										ChatGPT3.5提问次数
 									</label></div>
 									
 						
 						
-						<div class="form-check">		
-								<input  class="form-check-input aihty" type="radio" checked>
+								<div class="form-check">		      
+								<input  required="" class="form-check-input chatgpttz" type="radio" checked>
 								
-								<label  class="form-check-label" for="">
-										Ai绘图次数-Midjourney模型
-									</label>	</div>		
+								<label class="form-check-label" for="">
+										ChatGPT4.0提问次数
+									</label></div>
+									
 										
 							
 							
@@ -404,18 +428,16 @@ $sfkqgpt4 = $mysql->getOne($sql);
          }
           
           ?>
+          
+						
+						
+						
+	
 		
-					
-					
-						
-						<div class="mb-3" style="display:none;">
-								<label for="name" class="form-label">充值账号</label>
-								<input disabled type="text" class="form-control" id="name" required value="<?php echo $_COOKIE['dengluname'];?>">
-							</div>
-						
-						
-						
-							<div class="mb-3">
+		
+		
+		
+			<div class="mb-3">
 								<label for="package" class="form-label">*选择套餐价格</label>
 								<select class="form-select" id="package" required>
 									<option value="">请选择</option>
@@ -424,7 +446,7 @@ $sfkqgpt4 = $mysql->getOne($sql);
 						<?php
 						
 						
-						$sql = 'select * from chat_huitutaocan';
+						$sql = 'select * from chat_gpt4taocan';
 						
                         $sytc = $mysql->getAll($sql);
     
@@ -432,7 +454,13 @@ $sfkqgpt4 = $mysql->getOne($sql);
 						foreach ($sytc as $k => $value) {
 						    
 						    
-						    echo '<option value="'.$k.'">套餐'.($k+1).':Ai绘图'.$value['taocangedu'].'次--'.$value['taocanjiage'].'元 限时特惠</option>';
+						    
+						    if($k < 3){
+						        echo '<option value="'.$k.'">套餐'.($k+1).':Chatgpt4.0 Plus提问'.$value['taocangedu'].'次--'.$value['taocanjiage'].'元 限时特惠</option>';
+						    }else{
+						        echo '<option value="'.$k.'">套餐'.($k+1).':Chatgpt4.0 Plus提问'.$value['taocangedu'].'内无限次--'.$value['taocanjiage'].'元 限时特惠</option>';
+						    }
+						    
 			
 					  
 						}
@@ -444,27 +472,6 @@ $sfkqgpt4 = $mysql->getOne($sql);
 									
 								</select>
 							</div>
-							
-							
-				
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
 							<div class="mb-3">
 								<label for="payment" class="form-label">*支付方式</label>
 							
@@ -528,18 +535,6 @@ $sfkqgpt4 = $mysql->getOne($sql);
 									
 							
 							</div>
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
 							<div class="mb-3">
 								<label for="amount" class="form-label">支付金额</label>
 								<input type="text" class="form-control" id="amount" readonly>
@@ -556,16 +551,7 @@ $sfkqgpt4 = $mysql->getOne($sql);
 						</div>
 
 					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+
 					
 					
 					
@@ -636,43 +622,30 @@ $sfkqgpt4 = $mysql->getOne($sql);
 
 				
 				
-					    $('.chatgpttz').click(function(){
+					    $('.aihty').click(function(){
 					        
-					        $(".chatgpttz").prop("checked", false);
+					        $(".aihty").prop("checked", false);
 					        
-					      window.location.href = "taocan.php";
-					        
-					    });
-					    
-					    
-					    
-					        $('.chatgpt4').click(function(){
-					        
-					        $(".chatgpt4").prop("checked", false);
-					        
-					      window.location.href = "gpt4taocan.php";
+					      window.location.href = "taocanht.php";
 					        
 					    });
 					    
 					    
-					    	        $('.chatgpt3').click(function(){
+					    
+					       $('.chatgpt3').click(function(){
 					        
 					        $(".chatgpt3").prop("checked", false);
 					        
 					      window.location.href = "taocan.php";
 					        
 					    });
-	 
 					    
 					    
 					    
 					    
 					</script>
-					
 
 <script>
-
-
 
 
 
@@ -767,7 +740,7 @@ $.ajax({
 
 var datasj;	
 $.ajax({
-  url: "/taocanht.php?xxcx=1",
+  url: "/gpt4taocan.php?xxcx=1",
   type: "GET",
   async: false,
   success: function(data) {
@@ -870,7 +843,7 @@ $(function() {
         amount: amount,
         
         yhye:parseInt(yaye),
-        'biaoshi' : '充值绘画额度二',
+        'biaoshi' : '充值提问四额度二',
         // taocanhao : ,
       },
       success: function(response) {
@@ -917,7 +890,7 @@ $(function() {
         package: Number(package)+1,
         payment: payment,
         amount: amount,
-        'biaoshi' : '充值绘画额度',
+        'biaoshi' : '充值提问四额度',
         // taocanhao : ,
       },
       success: function(response) {
@@ -950,6 +923,7 @@ $(function() {
   });
 });
 </script>
+
 
 	
 	

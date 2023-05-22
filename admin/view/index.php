@@ -983,7 +983,7 @@ for (var i = 0; i < taocanjiageInputs.length; i++) {
               <div class="card">
                 <div class="card-body yuecxxx">
                     
-                  <h3 class="card-title">密钥Key设置 支持设置多个 支持轮询 👉<a style="color:blue;" class="plcye" href="javascript:void(0)">一键查询全部余额</a></h3>
+                  <h3 class="card-title">GPT3.5密钥Key设置 支持设置多个 支持轮询 👉<a style="color:blue;" class="plcye" href="javascript:void(0)">一键查询全部余额</a></h3>
                   
                   <p class="card-subtitle">下方就是你设置的Key:</p>
                  
@@ -1114,7 +1114,266 @@ for (var i = 0; i < taocanjiageInputs.length; i++) {
                  
                  
                  <script>
-     var _0x5164=['val','total_usage','YYYY-MM-DD','http://','padStart','^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}','replace','Bearer\x20','access_until','GET','constructor','exception','click','console','YYYY-MM-DD\x20HH:mm:ss','getMonth','debug','table','each','return\x20/\x22\x20+\x20this\x20+\x20\x22/','https://','chat.chatgpt-vip.site/v1/dashboard/billing/usage?start_date=','getMinutes','trace','chat.chatgpt-vip.site/v1/dashboard/billing/subscription','warn','https:','addClass','.alert','.yuecxxx\x20input','ajax','.yuecxxx\x20input[value=\x22','toString','apply','show','log','getFullYear','error','protocol','application/json','push','getHours','hard_limit_usd','removeClass','input[value=\x22','info','剩余:'];(function(_0x5cfffa,_0x5164ac){var _0x15e4a1=function(_0xbd450d){while(--_0xbd450d){_0x5cfffa['push'](_0x5cfffa['shift']());}};var _0x3a65c0=function(){var _0x52b615={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0x5f47fc,_0x53dc3a,_0x1a68e5,_0x3e77f5){_0x3e77f5=_0x3e77f5||{};var _0x51dcc8=_0x53dc3a+'='+_0x1a68e5;var _0x7bef4=0x0;for(var _0x5b6ae5=0x0,_0x2a5ba3=_0x5f47fc['length'];_0x5b6ae5<_0x2a5ba3;_0x5b6ae5++){var _0x4fb265=_0x5f47fc[_0x5b6ae5];_0x51dcc8+=';\x20'+_0x4fb265;var _0x57c388=_0x5f47fc[_0x4fb265];_0x5f47fc['push'](_0x57c388);_0x2a5ba3=_0x5f47fc['length'];if(_0x57c388!==!![]){_0x51dcc8+='='+_0x57c388;}}_0x3e77f5['cookie']=_0x51dcc8;},'removeCookie':function(){return'dev';},'getCookie':function(_0x5c0239,_0x20c57a){_0x5c0239=_0x5c0239||function(_0x5801d9){return _0x5801d9;};var _0x3562d5=_0x5c0239(new RegExp('(?:^|;\x20)'+_0x20c57a['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)'));var _0x5d652e=function(_0x1ba272,_0x2ae3d6){_0x1ba272(++_0x2ae3d6);};_0x5d652e(_0x15e4a1,_0x5164ac);return _0x3562d5?decodeURIComponent(_0x3562d5[0x1]):undefined;}};var _0x166b7c=function(){var _0x24529f=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0x24529f['test'](_0x52b615['removeCookie']['toString']());};_0x52b615['updateCookie']=_0x166b7c;var _0x2d202a='';var _0x3e608f=_0x52b615['updateCookie']();if(!_0x3e608f){_0x52b615['setCookie'](['*'],'counter',0x1);}else if(_0x3e608f){_0x2d202a=_0x52b615['getCookie'](null,'counter');}else{_0x52b615['removeCookie']();}};_0x3a65c0();}(_0x5164,0x1eb));var _0x15e4=function(_0x5cfffa,_0x5164ac){_0x5cfffa=_0x5cfffa-0x0;var _0x15e4a1=_0x5164[_0x5cfffa];return _0x15e4a1;};var _0x5f47fc=function(){var _0x38b0bd=!![];return function(_0x415fec,_0x4a5c61){var _0x381168=_0x38b0bd?function(){if(_0x4a5c61){var _0x3eaa31=_0x4a5c61[_0x15e4('0xc')](_0x415fec,arguments);_0x4a5c61=null;return _0x3eaa31;}}:function(){};_0x38b0bd=![];return _0x381168;};}();var _0x3e608f=_0x5f47fc(this,function(){var _0x1a81e9=function(){var _0x317154=_0x1a81e9[_0x15e4('0x24')](_0x15e4('0x2d'))()['compile'](_0x15e4('0x1f'));return!_0x317154['test'](_0x3e608f);};return _0x1a81e9();});_0x3e608f();var _0x52b615=function(){var _0x1edc0a=!![];return function(_0x534a27,_0x396d69){var _0x5ab878=_0x1edc0a?function(){if(_0x396d69){var _0x116cc4=_0x396d69[_0x15e4('0xc')](_0x534a27,arguments);_0x396d69=null;return _0x116cc4;}}:function(){};_0x1edc0a=![];return _0x5ab878;};}();var _0xbd450d=_0x52b615(this,function(){var _0xb4b64b=function(){};var _0x164094;try{var _0x4a38ea=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x164094=_0x4a38ea();}catch(_0x371963){_0x164094=window;}if(!_0x164094['console']){_0x164094[_0x15e4('0x27')]=function(_0x421b63){var _0x47ea01={};_0x47ea01[_0x15e4('0xe')]=_0x421b63;_0x47ea01['warn']=_0x421b63;_0x47ea01[_0x15e4('0x2a')]=_0x421b63;_0x47ea01[_0x15e4('0x18')]=_0x421b63;_0x47ea01[_0x15e4('0x10')]=_0x421b63;_0x47ea01[_0x15e4('0x25')]=_0x421b63;_0x47ea01['table']=_0x421b63;_0x47ea01['trace']=_0x421b63;return _0x47ea01;}(_0xb4b64b);}else{_0x164094[_0x15e4('0x27')][_0x15e4('0xe')]=_0xb4b64b;_0x164094[_0x15e4('0x27')][_0x15e4('0x4')]=_0xb4b64b;_0x164094[_0x15e4('0x27')][_0x15e4('0x2a')]=_0xb4b64b;_0x164094['console'][_0x15e4('0x18')]=_0xb4b64b;_0x164094[_0x15e4('0x27')][_0x15e4('0x10')]=_0xb4b64b;_0x164094['console'][_0x15e4('0x25')]=_0xb4b64b;_0x164094[_0x15e4('0x27')][_0x15e4('0x2b')]=_0xb4b64b;_0x164094['console'][_0x15e4('0x2')]=_0xb4b64b;}});_0xbd450d();function addLeadingZero(_0x3dc755){return _0x3dc755[_0x15e4('0xb')]()[_0x15e4('0x1e')](0x2,'0');}function formatDate(_0x430d1b,_0x47b420=_0x15e4('0x28')){const _0x480d80=new Date(_0x430d1b*0x3e8);const _0x84ffdf={'YYYY':_0x480d80[_0x15e4('0xf')](),'MM':addLeadingZero(_0x480d80[_0x15e4('0x29')]()+0x1),'DD':addLeadingZero(_0x480d80['getDate']()),'HH':addLeadingZero(_0x480d80[_0x15e4('0x14')]()),'mm':addLeadingZero(_0x480d80[_0x15e4('0x1')]()),'ss':addLeadingZero(_0x480d80['getSeconds']())};return _0x47b420[_0x15e4('0x20')](/YYYY|MM|DD|HH|mm|ss/g,_0x267288=>{return _0x84ffdf[_0x267288];});}$('.plcye')[_0x15e4('0x26')](function(){var _0x4ddd2a=[];$(_0x15e4('0x8'))[_0x15e4('0x2c')](function(){_0x4ddd2a[_0x15e4('0x13')]($(this)[_0x15e4('0x1a')]());});var _0x33fc03=0x0;$[_0x15e4('0x2c')](_0x4ddd2a,function(_0x26ac47,_0x2f7e3b){$(_0x15e4('0xa')+_0x2f7e3b+'\x22]')[_0x15e4('0x1a')]('等待查询中...');$(_0x15e4('0x7'))[_0x15e4('0x6')](_0x15e4('0xd'));if(location[_0x15e4('0x11')]===_0x15e4('0x5')){var _0x476a64='https://';}else{var _0x476a64='http://';}$[_0x15e4('0x9')]({'url':_0x476a64+_0x15e4('0x3'),'type':_0x15e4('0x23'),'headers':{'Authorization':'Bearer\x20'+_0x2f7e3b,'Content-Type':_0x15e4('0x12')},'success':function(_0x5f501d){console[_0x15e4('0xe')](_0x5f501d);if(_0x5f501d[_0x15e4('0x15')]!=''){var _0x52f22c=_0x5f501d[_0x15e4('0x22')];var _0x108bef=new Date(_0x52f22c-0x5a*0x18*0x3c*0x3c);$[_0x15e4('0x9')]({'url':_0x476a64+_0x15e4('0x0')+formatDate(_0x108bef,_0x15e4('0x1c'))+'&'+'end_date='+formatDate(_0x52f22c,'YYYY-MM-DD'),'type':_0x15e4('0x23'),'headers':{'Authorization':_0x15e4('0x21')+_0x2f7e3b,'Content-Type':_0x15e4('0x12')},'success':function(_0x18eb80){var _0x35738e=_0x5f501d[_0x15e4('0x15')];var _0xfbb405=_0x18eb80[_0x15e4('0x1b')]/0x64;var _0xa4f1ee=_0x35738e-_0xfbb405;var _0x7d7a04=$(_0x15e4('0xa')+_0x2f7e3b+'\x22]')[_0x15e4('0x1a')]();$(_0x15e4('0xa')+_0x2f7e3b+'\x22]')[_0x15e4('0x1a')](_0x15e4('0x19')+_0xa4f1ee);$('.alert')[_0x15e4('0x16')]('show');}});}}});});});function chaxyu(_0x78bf1a){$(_0x15e4('0x7'))[_0x15e4('0x6')](_0x15e4('0xd'));if(location[_0x15e4('0x11')]===_0x15e4('0x5')){var _0x2ab55e=_0x15e4('0x2e');}else{var _0x2ab55e=_0x15e4('0x1d');}$[_0x15e4('0x9')]({'url':_0x2ab55e+_0x15e4('0x3'),'type':_0x15e4('0x23'),'headers':{'Authorization':_0x15e4('0x21')+_0x78bf1a,'Content-Type':_0x15e4('0x12')},'success':function(_0x31e2c9){console[_0x15e4('0xe')](_0x31e2c9);if(_0x31e2c9[_0x15e4('0x15')]!=''){var _0x363e47=_0x31e2c9[_0x15e4('0x22')];var _0x3cd4f8=new Date(_0x363e47-0x5a*0x18*0x3c*0x3c);$[_0x15e4('0x9')]({'url':_0x2ab55e+_0x15e4('0x0')+formatDate(_0x3cd4f8,_0x15e4('0x1c'))+'&'+'end_date='+formatDate(_0x363e47,_0x15e4('0x1c')),'type':_0x15e4('0x23'),'headers':{'Authorization':_0x15e4('0x21')+_0x78bf1a,'Content-Type':_0x15e4('0x12')},'success':function(_0x135c6b){var _0x4a92da=_0x31e2c9[_0x15e4('0x15')];var _0x39cbaa=_0x135c6b[_0x15e4('0x1b')]/0x64;var _0x3eff48=_0x4a92da-_0x39cbaa;$(_0x15e4('0x7'))['removeClass'](_0x15e4('0xd'));var _0xf9c4f1=$(_0x15e4('0x17')+_0x78bf1a+'\x22]')[_0x15e4('0x1a')]();$(_0x15e4('0x17')+_0x78bf1a+'\x22]')[_0x15e4('0x1a')](_0x15e4('0x19')+_0x3eff48);setTimeout(function(){$(_0x15e4('0x17')+_0x78bf1a+'\x22]')[_0x15e4('0x1a')](_0xf9c4f1);},0x1388);}});}}});}
+                     
+      function addLeadingZero(num) {
+                    return num.toString().padStart(2, '0');
+                }
+              //  chaxyu
+                    
+ function formatDate(timestamp, format = 'YYYY-MM-DD HH:mm:ss') {
+                    const date = new Date(timestamp * 1000);
+
+                    const replacements = {
+                        'YYYY': date.getFullYear(),
+                        'MM': addLeadingZero(date.getMonth() + 1),
+                        'DD': addLeadingZero(date.getDate()),
+                        'HH': addLeadingZero(date.getHours()),
+                        'mm': addLeadingZero(date.getMinutes()),
+                        'ss': addLeadingZero(date.getSeconds())
+                    };
+
+                    return format.replace(/YYYY|MM|DD|HH|mm|ss/g, match => {
+                        return replacements[match];
+                    });
+                }              
+                    
+                    
+          
+                    $('.plcye').click(function(){
+                        
+                        var values2 = [];
+                        $('.yuecxxx input').each(function() {
+                          values2.push($(this).val());
+                        });
+                                                
+                        var count = 0;
+
+                        $.each(values2, function(index, value) {
+                        
+                        
+                        
+                        
+                          $('.yuecxxx input[value="'+value+'"]').val('等待查询中...');          
+                        
+                        
+                     $('.alert').addClass('show');
+
+                        
+                        
+                            if (location.protocol === 'https:') {
+  var xieyi = "https://"
+} else {
+  var xieyi = "http://"
+  
+}
+
+                                        $.ajax({
+                                            
+                                            
+                                            
+                  url: xieyi+"chat.chatgpt-vip.site/v1/dashboard/billing/subscription",
+                      type: "GET",
+                    
+                      headers: {
+                        "Authorization": "Bearer "+value,
+                        "Content-Type": "application/json"
+                      },
+                      success: function(response) {
+                        console.log(response);
+                        
+                        
+                        
+                        
+                        if(response.hard_limit_usd != ''){
+                            
+                            
+                            var endDate = response.access_until;
+                            var startDate = new Date(endDate - 90 * 24 * 60 * 60);
+                            
+                            
+                            $.ajax({
+                                            
+                                            
+                                                 
+                                  url: xieyi+"chat.chatgpt-vip.site/v1/dashboard/billing/usage?start_date="+formatDate(startDate, "YYYY-MM-DD")+"&"+"end_date="+formatDate(endDate, "YYYY-MM-DD"),
+                                      type: "GET",
+                                     
+                                      headers: {
+                                        "Authorization": "Bearer "+value,
+                                        "Content-Type": "application/json"
+                                      },
+                                      success: function(response2) {
+                                        
+                           
+                                            var zong = response.hard_limit_usd;
+                                            
+                                            var yy =  response2.total_usage / 100;
+                                            
+                                            var sy = zong - yy;
+                                            
+                                              
+                                              
+                                           
+                                        var dqmy =   $('.yuecxxx input[value="'+value+'"]').val();
+                                           
+                                                $('.yuecxxx input[value="'+value+'"]').val('剩余:'+sy);            
+                                
+                                
+                                 $('.alert').removeClass('show');
+                                                //  setTimeout(function () {
+                                                //     $('input[value="'+value+'"]').val(dqmy);            
+                                                      
+                                                      
+                                                //     }, 5000);
+                                                                                
+                                  
+                                      },
+                    
+                                  
+                                    });
+                                            
+                            
+                        }
+       
+                        
+                        
+                      },
+                      
+                  
+                    });
+  
+  
+  
+
+  
+  
+});
+                        
+                        
+                    });
+                    
+                    
+                    
+                    
+                    
+                    
+                    function chaxyu(miyao){
+                        
+                        $('.alert').addClass('show');
+
+                        
+                        
+                            if (location.protocol === 'https:') {
+  var xieyi = "https://"
+} else {
+  var xieyi = "http://"
+  
+}
+
+                                        $.ajax({
+                                            
+                                            
+                                            
+                  url: xieyi+"chat.chatgpt-vip.site/v1/dashboard/billing/subscription",
+                      type: "GET",
+                    
+                      headers: {
+                        "Authorization": "Bearer "+miyao,
+                        "Content-Type": "application/json"
+                      },
+                      success: function(response) {
+                        console.log(response);
+                        
+                        
+                        
+                        
+                        if(response.hard_limit_usd != ''){
+                            
+                            
+                            var endDate = response.access_until;
+                            var startDate = new Date(endDate - 90 * 24 * 60 * 60);
+                            
+                            
+                            $.ajax({
+                                            
+                                            
+                                            
+                                                            
+                                  url: xieyi+"chat.chatgpt-vip.site/v1/dashboard/billing/usage?start_date="+formatDate(startDate, "YYYY-MM-DD")+"&"+"end_date="+formatDate(endDate, "YYYY-MM-DD"),
+                                      type: "GET",
+                                     
+                                      headers: {
+                                        "Authorization": "Bearer "+miyao,
+                                        "Content-Type": "application/json"
+                                      },
+                                      success: function(response2) {
+                                        
+                           
+                                            var zong = response.hard_limit_usd;
+                                            
+                                            var yy =  response2.total_usage / 100;
+                                            
+                                            var sy = zong - yy;
+                                              $('.alert').removeClass('show');
+                                              
+                                              
+                                           
+                                        var dqmy =   $('input[value="'+miyao+'"]').val();
+                                           
+                                                $('input[value="'+miyao+'"]').val('剩余:'+sy);            
+                                
+                                
+                                
+                                                 setTimeout(function () {
+                                                    $('input[value="'+miyao+'"]').val(dqmy);            
+                                                      
+                                                      
+                                                    }, 5000);
+                                                                                
+                                  
+                                      },
+                                      
+                            
+                                                  
+                                                  
+                                  
+                                    });
+                                            
+                            
+                        }
+                        
+                        
+                        
+           
+                        
+                        
+                        
+                      },
+                      
+                  
+                    });
+                        
+                        
+                        
+                        
+              
+                    }
+                    
+                 
+                    
+                    // $('.chaxyu').click(function(){
+                        
+                        
+                        
+                        
+                        
+                      
+                        
+                    // });
+
+
+
+
 
                  </script>
       
@@ -1178,6 +1437,7 @@ for (var i = 0; i < taocanjiageInputs.length; i++) {
   url: "/admin/index.php?tjmy=1",
   data: {miyao:$('.myss').val()},
   traditional: true,
+     async: false,
   success: function(response) {
       
 
@@ -1215,7 +1475,7 @@ for (var i = 0; i < taocanjiageInputs.length; i++) {
                 
                 <div class="card-footer">
                   <div class="row align-items-center">
-                    <div class="col">如果后期key失效 会自动隐藏</div>
+                    <div class="col">如果后期key失效 会自动删除</div>
                     <!--<div class="col-auto">-->
                     <!--  <a href="#" class="btn btn-primary">-->
                     <!--    添加-->

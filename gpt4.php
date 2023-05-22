@@ -1,10 +1,5 @@
 <?php
-$filename = './install/install.lock';
-if (!file_exists($filename)) {
-    echo "<script>window.location.href='./install/index.php';</script>";
-    exit();
-}
-require('./code.php');
+require('./gpt4code.php');
 if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
     $ip = $_SERVER["HTTP_CF_CONNECTING_IP"];
 } else {
@@ -17,23 +12,15 @@ require('./tool/pu.php');
 if(($sfvip != '') || ($time2 < $time1)){
     $shihuiyuan = '是会员';
 }
-if (version_compare(PHP_VERSION, '7.3.0', '>') && version_compare(PHP_VERSION, '7.4.0', '<')) {
-} else {
-    echo '当前运行的PHP版本不符合要求 请切换PHP7.3版本';
-    exit();
-}
-if(empty($_COOKIE['gpt4'])){
+if($nsfkqgpt4 != '开启'){
     setcookie("gpt4", '0', $expiration, "/");  
-}
-if($nsfkqgpt4 == '开启'){
-   if(!empty($_COOKIE['gpt4'])){
-        if($_COOKIE['gpt4'] == '1'){
-            echo "<script>window.location.href='gpt4.php';</script>";
-            exit();
-        }
-    } 
+    echo "<script>window.location.href='index.php';</script>";
+    exit();
 }else{
-   setcookie("gpt4", '0', $expiration, "/");  
+    if(empty($_COOKIE['gpt4'])){
+        echo "<script>window.location.href='index.php';</script>";
+        exit();
+    }
 }
 ?>
 <!doctype html>
@@ -163,7 +150,9 @@ if(!empty(uacc())){
     
     
     ?>
-
+    
+    <!--<a href="" target="_blank" style="background-color: green; color: white; padding: 5px; border-radius: 5px; text-align: center;">切换ChatGPT4.0</a>-->
+          
           <br>
                
                <div class="talk-add tjxhh"><i class="el-icon-plus all-talk-icon"></i>
@@ -298,7 +287,7 @@ if(!empty(uacc())){
                     
             <li>
                  <i class="el-icon-switch-button"></i>
-                  <a href="index.php?tcdl=1"></i>退出登录</a>
+                  <a href="gpt4.php?tcdl=1"></i>退出登录</a>
                 
                 </li>    ';
         
@@ -309,7 +298,7 @@ if(!empty(uacc())){
                     
             <li>
                  <i class="el-icon-switch-button"></i>
-                  <a href="index.php?tcdl=1"></i>退出登录</a>
+                  <a href="gpt4.php?tcdl=1"></i>退出登录</a>
                 
                 </li>    ';
     }
@@ -353,12 +342,22 @@ if (preg_match('/(iPhone|Android|Windows Phone)/i', $user_agent)) { ?>
    
    
    
-<div style="z-index: 9;" class="con-right" id="con-right" :style="'width: '+con_w+'px;left:'+left_w+'px;height: '+(dh-70)+'px;'" >
+<div style="z-index: 9;
+    width: 910px;
+    left: 250px;
+    position: fixed;
+    height: unset;
+    top: 35%;    height: 200px;" class="con-right" id="con-right" :style="'width: '+con_w+'px;left:'+left_w+'px;'" >
     
     
    <?php } else { ?>
 
-<div style="z-index: 9;" class="con-right" id="con-right" :style="'width: '+con_w+'px;left:'+left_w+'px;height: '+(dh-75)+'px;'" >
+<div style="z-index: 9;
+    width: 910px;
+    left: 250px;
+    position: fixed;
+    height: unset;
+    top: 35%;    height: 200px;" class="con-right" id="con-right" :style="'width: '+con_w+'px;left:'+left_w+'px;'" >
     
     
     
@@ -368,7 +367,7 @@ if (preg_match('/(iPhone|Android|Windows Phone)/i', $user_agent)) { ?>
     
     
     
-    <div class="content" style="margin: 0px auto;"><h4 onclick="resetHeight()" class="title" style="">ChatGPT<span style="    text-transform: uppercase;font-size: .875rem;
+    <div class="content" style="margin: 0px auto;"><h4 onclick="resetHeight()" class="title" style="">ChatGPT4.0<span style="    text-transform: uppercase;font-size: .875rem;
     line-height: 1.25rem;    --un-bg-opacity: 1;
     background-color: rgba(254,240,138,var(--un-bg-opacity));--un-text-opacity: 1;
     color: rgba(113,63,18,var(--un-text-opacity));    padding-top: .125rem;
@@ -376,9 +375,7 @@ if (preg_match('/(iPhone|Android|Windows Phone)/i', $user_agent)) { ?>
     padding-right: .375rem;border-radius: .375rem;" class="bg-yellow-200 text-yellow-900 py-0.5 px-1.5 text-xs md:text-sm rounded-md uppercase" data-v-bf40dc81=""> Plus </span></h4> 
 <br><br>
 
-<div style="width: 100%;"><div class="info-box el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-8"><i class="el-icon-chat-dot-square" style="font-size: 24px; color: rgb(102, 102, 102);"></i> <span class="in-t">使用示例</span> <ul><li>“用简单的术语解释量子计算”</li> <li>“对于一个10岁的孩子的生日，有什么创意吗”</li> <li>“如何用Javascript发出HTTP请求?”</li></ul></div> <div class="info-box el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-8"><i class="el-icon-cpu" style="font-size: 24px; color: rgb(102, 102, 102);"></i> <span class="in-t">能力</span> <ul><li>记住用户之前在对话中说过的话</li> <li>允许用户提供后续修正</li> <li>接受或拒绝不适当请求的培训</li></ul></div> <div class="info-box el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-8"><i class="el-icon-warning-outline" style="font-size: 24px; color: rgb(102, 102, 102);"></i> <span class="in-t">局限性</span> <ul><li>可能偶尔会产生不正确的信息</li> <li>可能偶尔会产生有害的指令或有偏见的内容</li> <li>对2021年后的世界和事件的了解有限</li></ul></div></div></div> <div class="call-box"></div></div>
-
-
+<div style="width: 100%; display:none;"><div class="info-box el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-8"><i class="el-icon-chat-dot-square" style="font-size: 24px; color: rgb(102, 102, 102);"></i> <span class="in-t">使用示例</span> <ul><li>“用简单的术语解释量子计算”</li> <li>“对于一个10岁的孩子的生日，有什么创意吗”</li> <li>“如何用Javascript发出HTTP请求?”</li></ul></div> <div class="info-box el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-8"><i class="el-icon-cpu" style="font-size: 24px; color: rgb(102, 102, 102);"></i> <span class="in-t">能力</span> <ul><li>记住用户之前在对话中说过的话</li> <li>允许用户提供后续修正</li> <li>接受或拒绝不适当请求的培训</li></ul></div> <div class="info-box el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-8"><i class="el-icon-warning-outline" style="font-size: 24px; color: rgb(102, 102, 102);"></i> <span class="in-t">局限性</span> <ul><li>可能偶尔会产生不正确的信息</li> <li>可能偶尔会产生有害的指令或有偏见的内容</li> <li>对2021年后的世界和事件的了解有限</li></ul></div></div></div> <div class="call-box"></div></div>
 
 
 
@@ -505,22 +502,23 @@ if(!empty(uacc())){
   <div class="childsrk">
       <div class="input-containersrk shurk40" style="    position: absolute;
     bottom: 10px;">
+          
+          
 
 
-
-     
-     
+          
+        
+            
      <?php
      
-     if($nsfkqgpt4 == '开启'){
-         echo '<button type="button" data-toggle="dropdown" aria-expanded="false" class="btn btn-secondary qhgpt4" style="margin: 0px 10px 0px 0px;background-color: rgb(52 53 65/var(--tw-bg-opacity)) !important;border: 1px solid rgb(140, 147, 157);">GPT4</button>';
-     }
-     
-     ?>
+  
+         echo '<button type="button" data-toggle="dropdown" aria-expanded="false" class="btn btn-secondary qhgpt3" style="margin: 0px 10px 0px 0px;background-color: rgb(52 53 65/var(--tw-bg-opacity)) !important;border: 1px solid rgb(140, 147, 157);">GPT3.5</button>';
      
      
-     
-          
+     ?> 
+        
+        
+        
           
           
            <textarea oninput="autoHeight(this)" type="text" autocomplete="off" id="kw-target" placeholder="您好，想问点什么？" class="el-input__inner form-controltw dtsrk" rows="1"></textarea>
@@ -636,6 +634,11 @@ if(!empty(uacc())){
         $sql = "select gglx from chat_admin where id = 1";
         $gglx = $mysql->getOne($sql);
  
+ 
+        $sql = "select gpt4cs from chat_yonghu where yhmc = '$sfyjdl'";
+        $gpt4cs = $mysql->getOne($sql);
+ 
+ 
         if($gglx == '1'){
             
             if(empty(uacc())){
@@ -663,7 +666,7 @@ if(!empty(uacc())){
                 
           
                
-                if($sycs != '0'){
+                if($gpt4cs != '0'){
                     
                     echo '<div class="popup" id="note" style="display:none;"> <div class="popup-header" style="margin: 0px 0 40px 0;"> <h3 class="popup-title">同一个世界，同一个梦想</h3> </div> <div class="popup-main">';
                     $file = $dangqianlj.'admin/ggnr.php';

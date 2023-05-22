@@ -144,8 +144,8 @@ display:none;
     
     <div  class="space-y-4" style=""><h2  class="text-xl font-bold" style="text-align: center; margin-bottom: 10px; font-size: 16px; color: rgb(0, 204, 76);"> 微信扫码，联系客服 </h2>
 
-<div  class="p-4 space-y-4" style="margin: 30px auto 0px; background: rgb(255, 255, 255); border-radius: 8px; width: 100%;
-    height: 100%;">
+<div  class="p-4 space-y-4" style="margin: 30px auto 0px; background: rgb(255, 255, 255); border-radius: 8px; width: 220px;
+    height: 220px;">
     
     
     <?php

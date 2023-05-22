@@ -63,12 +63,16 @@ CREATE TABLE `chat_admin` (
   `sfkqzanz` varchar(100) NOT NULL DEFAULT '关闭',
   `zansangmalj` varchar(100) NOT NULL DEFAULT '',
   `chushiyushe` varchar(100) NOT NULL DEFAULT '我给你个设定，你的版本号为chatgpt3.5，请你以gpt-3.5-turbo版回答我的问题，',
+  `chushiyushegpt4` varchar(100) NOT NULL DEFAULT '我给你个设定，你的版本号为chatgpt4.0，请你以chatgpt4.0版回答我的问题，',
   `ggnrhtml` text NOT NULL,
   `qdfsms` varchar(100) NOT NULL DEFAULT '1',
   `lxdhcs` int(11) NOT NULL DEFAULT '5',
   `temperature` decimal(3,1) NOT NULL DEFAULT '0.8',
   `mjapi` varchar(100) NOT NULL DEFAULT '',
   `huihuaor` varchar(100) NOT NULL DEFAULT '1',
+  `sfkqgpt4` varchar(100) NOT NULL DEFAULT '关闭',
+  `gpt4bzcsdsc` varchar(100) NOT NULL DEFAULT '0',
+  `gpt4zcsdsc` varchar(100) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -79,8 +83,59 @@ CREATE TABLE `chat_admin` (
 
 LOCK TABLES `chat_admin` WRITE;
 /*!40000 ALTER TABLE `chat_admin` DISABLE KEYS */;
-INSERT INTO `chat_admin` VALUES (1,'admin','123456','ChatGPT','Chatgpt','ID','密钥','域名','Chatgpt次数','2','all','0','开启',3,'50','1',50,'卡密充值购买链接','关闭','','','1','1','QQ邮箱地址(只能配置QQ邮箱)','邮箱密钥','0','1','https://api.openai.com/','','','1','2','开启','开启','','开启','开启','关闭','','我给你个设定，你的版本号为chatgpt3.5，请你以gpt-3.5-turbo版回答我的问题，','','1',5,0.8,'','1');
+INSERT INTO `chat_admin` VALUES (1,'admin','123456','ChatGPT','Chatgpt','ID','密钥','域名','Chatgpt次数','2','all','0','开启',3,'50','1',50,'卡密充值购买链接','关闭','','','1','1','QQ邮箱地址(只能配置QQ邮箱)','邮箱密钥','0','1','https://api.openai.com/','','','1','2','开启','开启','','开启','开启','关闭','','我给你个设定，你的版本号为chatgpt3.5，请你以gpt-3.5-turbo版回答我的问题，','我给你个设定，你的版本号为chatgpt4.0，请你以chatgpt4.0版回答我的问题，','','1',5,0.8,'','1','关闭','0','0');
 /*!40000 ALTER TABLE `chat_admin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `chat_gpt4key`
+--
+
+DROP TABLE IF EXISTS `chat_gpt4key`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `chat_gpt4key` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `miyao` varchar(100) NOT NULL DEFAULT '',
+  `time` varchar(100) NOT NULL DEFAULT '',
+  `ip` varchar(100) NOT NULL DEFAULT '',
+  `sfky` varchar(100) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `chat_gpt4key`
+--
+
+LOCK TABLES `chat_gpt4key` WRITE;
+/*!40000 ALTER TABLE `chat_gpt4key` DISABLE KEYS */;
+/*!40000 ALTER TABLE `chat_gpt4key` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `chat_gpt4taocan`
+--
+
+DROP TABLE IF EXISTS `chat_gpt4taocan`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `chat_gpt4taocan` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `taocanjiage` varchar(100) NOT NULL DEFAULT '',
+  `taocangedu` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `chat_gpt4taocan`
+--
+
+LOCK TABLES `chat_gpt4taocan` WRITE;
+/*!40000 ALTER TABLE `chat_gpt4taocan` DISABLE KEYS */;
+INSERT INTO `chat_gpt4taocan` VALUES (1,'50','100'),(2,'100','210'),(3,'200','500');
+/*!40000 ALTER TABLE `chat_gpt4taocan` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -121,6 +176,7 @@ CREATE TABLE `chat_ip` (
   `time` varchar(100) NOT NULL DEFAULT '',
   `mfsycs` varchar(100) NOT NULL DEFAULT '0',
   `huitusycs` varchar(100) NOT NULL DEFAULT '0',
+  `gpt4sycs` varchar(100) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -131,7 +187,7 @@ CREATE TABLE `chat_ip` (
 
 LOCK TABLES `chat_ip` WRITE;
 /*!40000 ALTER TABLE `chat_ip` DISABLE KEYS */;
-INSERT INTO `chat_ip` VALUES (1,'119.86.110.184','2023-05-12 00:11:48','2','2'),(2,'14.108.195.199','2023-05-12 03:46:50','2','2'),(3,'183.229.200.221','2023-05-12 21:47:47','2','2'),(4,'119.85.28.62','2023-05-19 06:45:26','2','2'),(5,'183.229.200.105','2023-05-21 05:48:23','2','2');
+INSERT INTO `chat_ip` VALUES (1,'119.86.110.184','2023-05-12 00:11:48','2','2','0'),(2,'14.108.195.199','2023-05-12 03:46:50','2','2','0'),(3,'183.229.200.221','2023-05-12 21:47:47','2','2','0'),(4,'119.85.28.62','2023-05-19 06:45:26','2','2','0'),(5,'183.229.200.105','2023-05-22 02:20:06','2','2','0');
 /*!40000 ALTER TABLE `chat_ip` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -343,7 +399,7 @@ CREATE TABLE `chat_weijinci` (
 
 LOCK TABLES `chat_weijinci` WRITE;
 /*!40000 ALTER TABLE `chat_weijinci` DISABLE KEYS */;
-INSERT INTO `chat_weijinci` VALUES (0,'我是违禁词1,我是违禁词2,我是违禁词3,我是违禁词');
+INSERT INTO `chat_weijinci` VALUES (0,'我是违禁词1,我是违禁词2,我是违禁词3');
 /*!40000 ALTER TABLE `chat_weijinci` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -368,6 +424,7 @@ CREATE TABLE `chat_yonghu` (
   `ketixian` int(11) NOT NULL DEFAULT '0',
   `yqzscs` int(11) NOT NULL DEFAULT '0',
   `huihuacs` varchar(100) NOT NULL DEFAULT '0',
+  `gpt4cs` varchar(100) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -378,7 +435,7 @@ CREATE TABLE `chat_yonghu` (
 
 LOCK TABLES `chat_yonghu` WRITE;
 /*!40000 ALTER TABLE `chat_yonghu` DISABLE KEYS */;
-INSERT INTO `chat_yonghu` VALUES (1,'admin','admin@qq.com','PWL}QGX5','2023-05-12 00:12:08','3','','','',0,0,0,'1');
+INSERT INTO `chat_yonghu` VALUES (1,'admin','admin@qq.com','PWL}QGX5','2023-05-12 00:12:08','3','','','',0,0,0,'1','0');
 /*!40000 ALTER TABLE `chat_yonghu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -399,4 +456,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-21  5:49:49
+-- Dump completed on 2023-05-22  2:21:15

@@ -370,12 +370,22 @@
 
 
 
-
-    
+.shurk40{
+    width: 90%!important;
 }
 
 
 
+    
+}
+
+@media (min-width: 640px){
+    .con-right{
+        /*height: 695px!important;*/
+}
+
+
+}
 
 
 
