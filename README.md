@@ -17,6 +17,23 @@ Q：52132621
 
 Q群：159740513
 
+## 演示DEMO
+
+演示站点：[点我](http://chat.gt-it.cn)
+
+演示安装包：（待补充）
+
+Windows
+
+
+Mac(Intel)
+
+
+Mac(Apple Silicon)
+
+安卓
+
+
 ## 功能
 
 - [x] 登录、注册、用户管理
