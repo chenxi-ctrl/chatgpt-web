@@ -19,20 +19,20 @@ Q群：159740513
 
 ## 演示DEMO
 
-演示站点：[点我](http://chat.gt-it.cn)
+演示站点：[点我](https://chat.gt-it.cn)
 
 演示安装包：（待补充）
 
-Windows
+[//]: # (Windows)
 
+[//]: # ()
+[//]: # (Mac&#40;Intel&#41;)
 
-Mac(Intel)
+[//]: # ()
+[//]: # (Mac&#40;Apple Silicon&#41;)
 
-
-Mac(Apple Silicon)
-
-安卓
-
+[//]: # ()
+[//]: # (安卓)
 
 ## 功能
 
