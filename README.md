@@ -19,9 +19,17 @@ Q群：159740513
 
 ## 演示DEMO
 
-演示站点：[点我](https://chat.gt-it.cn)
+### 演示站点
 
-演示安装包：（待补充）
+[前台地址](https://chat.gt-it.cn)
+
+[后台地址](https://chat.gt-it.cn/admin)
+
+用户：admin
+
+密码：123456
+
+### 演示安装包：（待补充）
 
 [//]: # (Windows)
 
